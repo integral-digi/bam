@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Who wants to be a millionaire | Sponsored by Integral</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" />
+        <script type="text/javascript" src="millionaire.js"></script>
+        <script type="text/javascript" src="timer.js"></script>
+    </head>
+    <body id ="WWTBAM">
+        <div class="hero">
+            <img class="bgImg" src="/static/images/kayak.svg"" alt="backgroung vector">
+            <div class="banded">
+                {% block content %}{% endblock %}
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>                

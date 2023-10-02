@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}}
+                <!--Below is our question timer which will powered by Javascript-->
+                <div class="timer">
+                <p class="timerChild">{{ template_countdown }}</p>
+                </div>
+                <div class="avatar">
+                    <!--img src="./avatar.jpg" height="64px" wclassth="64px" alt="avatar"-->
+                </div>
+                <div class="questionCounter">
+                    <p>Question {{ template_count }} of 10</p>
+                </div>
+                <!--Below is our question board-->
+                <div class="questionBoard">
+                    <p>{{ template_question }}</p>
+                </div>
+                <div class="answerOptions">
+                    <div class="options">
+                        <div class="identifier">A</div>
+                        <p class="answers">{{ template_answer }}</p>
+                    </div>
+                    <div class="options">
+                        <div class="identifier">B</div>
+                        <p class="answers">{{ template_answer }}</p>
+                    </div>
+                    <div class="options">
+                        <div class="identifier">C</div>
+                        <p class="answers">{{ template_answer }}</p>
+                    </div>
+                    <div class="options">
+                        <div class="identifier">D</div>
+                        <p class="answers">{{ template_answer }}</p>
+                    </div>
+                    
+                </div>
+                <!--Submit Button and load next question-->
+                <button class="submitAnswer"><a href="#">Submit Answer</a></button>
+{% endblock %}
